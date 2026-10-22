@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Layout da actividade principal do Exercício III - Lista de Tarefas
+    Estrutura da árvore de UI:
+    LinearLayout (vertical)
+    ├── EditText  → campo onde o utilizador escreve a tarefa
+    └── ListView  → lista que mostra todas as tarefas adicionadas
+-->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#F5F5F5">
+
+    <!-- Campo de texto para introduzir nova tarefa -->
+    <!-- O utilizador prime ENTER para adicionar a tarefa -->
+    <EditText
+        android:id="@+id/editTextTask"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Escreve uma tarefa e prime Enter..."
+        android:inputType="text"
+        android:background="@android:drawable/edit_text"
+        android:padding="8dp"
+        android:textSize="16sp" />
+
+    <!--
+        ListView que mostra a lista de tarefas.
+        layout_weight="1" faz com que ocupe todo o espaço restante vertical.
+    -->
+    <ListView
+        android:id="@+id/listViewTasks"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="12dp"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="1dp" />
+
+</LinearLayout>

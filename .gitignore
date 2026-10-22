@@ -1,0 +1,16 @@
+# Ficheiros gerados pelo Gradle (não devem ir para o repositório)
+.gradle/
+build/
+
+# Ficheiros de IDE
+.idea/
+*.iml
+
+# Ficheiros de sistema Windows
+Thumbs.db
+Desktop.ini
+
+# Ficheiros temporários Java
+*.class
+*.jar
+!gradle/wrapper/gradle-wrapper.jar
